@@ -1,0 +1,28 @@
+{
+    "name": "smit-backend/edge-caching-proxy",
+    "description": "High-performance edge reverse caching library supporting RFC 5861 stale-while-revalidate, ETag 304 validation, and instant tag purging.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "smit-backend",
+            "email": "sync2sale@gmail.com",
+            "homepage": "https://github.com/smit-backend"
+        }
+    ],
+    "require": {
+        "php": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "SmitBackend\\EdgeVarnish\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SmitBackend\\EdgeVarnish\\PackageServiceProvider"
+            ]
+        }
+    }
+}
